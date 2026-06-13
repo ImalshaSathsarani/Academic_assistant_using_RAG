@@ -1,0 +1,5 @@
+Welcome to AcmeCorp! 
+Our standard working hours are 9:00 AM to 5:00 PM.
+Every employee is entitled to 14 casual leaves and 7 sick leaves per calendar year.
+Our health insurance policy covers dental checkups up to $500 per year.
+Remote work is allowed on Tuesdays and Thursdays with supervisor approval.

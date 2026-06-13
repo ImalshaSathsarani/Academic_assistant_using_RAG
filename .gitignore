@@ -1,0 +1,24 @@
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Python compiled caching files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Local Vector Databases (Chroma)
+chroma_db/
+.chroma/
+
+# User uploaded document caches
+temp_uploads/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Environmental variables (Never push your actual API keys!)
+.env
