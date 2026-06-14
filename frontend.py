@@ -16,7 +16,7 @@ with st.sidebar:
                 try:
                     # Prepare the file payload for standard multipart form upload
                     files = {"file": (uploaded_file.name, uploaded_file.getvalue(),"application/pdf")}
-                    backend_upload_url = "http://127.0.0.1:8000/upload"
+                    backend_upload_url = "https://academic-assistant-using-rag.onrender.com/upload"
                     response = requests.post(backend_upload_url, files=files)
                     if response.status_code == 200:
                         st.success(response.json().get("message"))
@@ -37,7 +37,7 @@ if st.button("Submit Query"):
     else:
         with st.spinner("🤖 Agent is thinking..."):
             try:
-                backend_ask_url = "http://127.0.0.1:8000/ask"
+                backend_ask_url = "https://academic-assistant-using-rag.onrender.com/ask"
                 payload = {"question": user_question}
                 response = requests.post(backend_ask_url, json=payload)
 
