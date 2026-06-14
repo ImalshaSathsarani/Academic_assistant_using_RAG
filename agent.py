@@ -277,7 +277,7 @@ def rebuild_agent_with_doc(pdf_path: str):
     # 4. Generate embeddings and create database index
     embedding_engine = GoogleGenerativeAIEmbeddings(model="gemini-embedding-2-preview")
     vector_db = Chroma.from_documents(
-        documents=text_chunks, embedding=embedding_engine, persist_directory=DB_DIR
+        documents=text_chunks, embedding=embedding_engine 
     )
 
     # 5. Connect Vector DB as an agent tool
